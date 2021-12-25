@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>login</title>
+<style>
+mark1
+{
+	background-color:pink;
+	color:black;
+}
+
+.button
+{
+border :none;
+color:white;
+padding:15px 32px;
+text-align:center;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+}
+.button1{background-color:pink;}
+
+</style>
+</head>
+
+<body>
+<center>
+<br><br><br><br><br><br><br>
+ <marquee width="60%" direction="right" height="100px"><h4><mark1>XYZ COLLEGE <mark1></h4></marquee>
+
+<form action="#" method="post">
+{% csrf_token %}
+<mark1><label>USERNAME:  </label></mark1>
+<input type="text" id="fname" name="fname" required>
+<br><br><br><br><br><br><br>
+<mark1><label>PASSWORD:  </label></mark1>
+<input type="password" id="pwd1" name="pwd1" required>
+
+<input type="submit" value="LOGIN">
+</form>
+
+<br><br><br><br>
+<center>
+
+<!--a href="student_login.html"<button class="button button1">LOGIN</button></a -->
+
+
+</center>
+<br><br><br><br><br>
+ <marquee width="60%" direction="left" height="100px"><h4><mark1>XYZ COLLEGE<mark1></h4></marquee>
+
+
+
+</body>
+</html>

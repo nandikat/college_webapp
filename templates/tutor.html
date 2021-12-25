@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Tutor</title>
+<style>
+mark1
+{
+	background-color:pink;
+	color:black;
+}
+
+.button
+{
+border :none;
+color:white;
+padding:15px 32px;
+text-align:center;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+}
+.button1{background-color:pink;}
+
+</style>
+</head>
+
+<body>
+{% include 'student_login_top.html' %}
+<br><br><br><br>
+<center>
+
+<form action="#" method="post">
+{% csrf_token %}
+<mark1><label>NAME:  </label></mark1>
+<input type="text" id="nname" name="nname" required>
+<br><br>
+<mark1><label>COURSE:  </label></mark1>
+<input type="text" id="cname" name="cname" required>
+<br><br>
+<mark1><label>ROLL NO:  </label></mark1>
+<input type="text" id="roll" name="roll" required>
+<br><br>
+<mark1><label>SUBJECT 1:  </label></mark1>
+<input type="text" id="sub1" name="sub1" required >
+<br><br>
+<mark1><label>SUBJECT 2:  </label></mark1>
+<input type="text" id="sub2" name="sub2" >
+<br><br>
+<mark1><label>SUBJECT 3:  </label></mark1>
+<input type="text" id="sub3" name="sub3" >
+<br><br>
+<mark1><label>SUBJECT 4:  </label></mark1>
+<input type="text" id="sub4" name="sub4" >
+<br><br>
+<mark1><label>SUBJECT 5:  </label></mark1>
+<input type="text" id="sub5" name="sub5" >
+<br><br>
+<mark1><label>SUBJECT 6:  </label></mark1>
+<input type="text" id="sub6" name="sub6" >
+<br><br>
+<input type="submit" value="SUBMIT">
+</form>
+
+
+
+
+</body>
+</html>

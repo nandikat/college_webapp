@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>FEE DETAILS</title>
+</head>
+<body>
+
+{% include 'student_login_top.html' %}
+<br><br><br><br>
+<center>
+<div class="container">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                        <th>Total </th>
+                        <th>Paid </th>
+                        <th>Due </th>
+                        
+			
+
+			                        
+              </tr>
+            </thead>
+            <tbody>
+                {% for pro in frol %}  
+              <tr>
+			<td>{{pro.total}}  </td>
+                        <td>{{pro.paid}}  </td>
+                        <td>{{due}}  </td>
+                        
+                        
+        
+              </tr>
+                  {% endfor %} 
+            </tbody>
+        </table>
+
+    </div>
+</center>
+</body>

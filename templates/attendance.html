@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>attendance</title>
+
+
+</head>
+<body>
+
+{% include 'student_login_top.html' %}
+<br><br><br><br>
+<center>
+<div class="container">
+        <table class="table table-striped">
+	
+	
+            <thead>
+
+              <tr>
+                        <th>DATE </th>
+                        <th>PRESENT/ABSENT </th>
+                        
+                        
+              </tr>
+
+            </thead>
+</center>
+            <tbody>
+
+                {% for pro in arol %}  
+
+              <tr>
+		
+                        <td>{{pro.date   }}</td>
+			
+                        <td>{{  pro.status}}</td>
+			
+                        
+                        
+        
+              </tr>
+	
+			
+                  {% endfor %} 
+
+            </tbody>
+        </table>	
+    </div>
+</body>

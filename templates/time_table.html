@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>time_table</title>
+</head>
+<body>
+
+{% include 'student_login_top.html' %}
+<br><br><br><br>
+<center>
+<div class="container">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                        <th>Time </th>
+                        <th>Monday </th>
+                        <th>Tuesday </th>
+                        <th>Wednesdy </th>
+                        <th>Thursday </th>
+                        <th>Friday </th>
+			
+
+			                        
+              </tr>
+            </thead>
+            <tbody>
+                {% for pro in trol %}  
+              <tr>
+			<td>{{pro.time}}  </td>
+                        <td>{{pro.monday}}  </td>
+                        <td>{{pro.tuesday}}  </td>
+                        <td>{{pro.wednesday}}  </td>
+                        <td>{{pro.thursday}}  </td>
+                        <td>{{pro.friday}}  </td>
+                        
+                        
+        
+              </tr>
+                  {% endfor %} 
+            </tbody>
+        </table>
+
+    </div>
+</center>
+</body>

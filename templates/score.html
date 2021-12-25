@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>scores</title>
+</head>
+<body>
+
+{% include 'student_login_top.html' %}
+<br><br><br><br>
+<center>
+<div class="container">
+        <table class="table table-striped">
+            <thead>
+
+              <tr>
+			<th>Semester</th>
+                        <th>subject 1 </th>
+                        <th>subject 2 </th>
+                        <th>subject 3 </th>
+                        <th>subject 4 </th>
+                        <th>subject 5 </th>
+                        <th>subject 6 </th>
+
+                        
+              </tr>
+
+            </thead>
+</center>
+            <tbody>
+
+                {% for pro in srol %}  
+
+              <tr>
+			<td>{{pro.semester}}</td>
+                        <td>{{pro.subject_1}}</td>
+                        <td>{{pro.subject_2}}</td>
+                        <td>{{pro.subject_3}}</td>
+                        <td>{{pro.subject_4}}</td>
+                        <td>{{pro.subject_5}}</td>
+                        <td>{{pro.subject_6}}</td>
+                        
+        
+              </tr>
+	
+			
+                  {% endfor %} 
+
+            </tbody>
+        </table>	
+    </div>
+</body>
