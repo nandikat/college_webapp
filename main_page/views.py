@@ -250,6 +250,11 @@ def tutor(request):
     else:
                             
         return render(request,'tutor.html')
+
+def contact(request):
+            
+    return render(request,'contact.html')
+
     
     
     

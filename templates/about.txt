@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>ABOUT</title>
+</head>
+<body>
+<center>
+<h1> HOSTEL </h1>
+<p style="font-family:'Freestyle Script'">For you home away from home.</p>
+<h4> There are: </h4>
+<li>
+
+

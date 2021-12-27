@@ -17,6 +17,8 @@ from django.contrib import admin
 
 from django.urls import path #,include
 from main_page import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,8 +29,9 @@ urlpatterns = [
     path('home/time_table.html',views.time_table),
     path('home/fees.html',views.fee),
     path('home/attendance.html',views.attendance),
-    path('home/tutor.html',views.tutor)
+    path('home/tutor.html',views.tutor),
+     path('home/contact.html',views.contact)
     
     #path('home/student_login.html',views.student_log),
     #path('home/student_login_top.html',views.student_login_top),  
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

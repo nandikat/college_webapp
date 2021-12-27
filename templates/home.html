@@ -26,19 +26,34 @@ text-align:center;
 display:inline-block;
 font-size:16px;
 margin:4px 2px;
+position:absolute;
+right:100px;
+top:50px;
+
+
+}
+.button2
+{
+border :none;
+color:white;
+padding:15px 32px;
+text-align:center;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+position:absolute;
+right:300px;
+top:50px;
 
 
 }
 
 .button1{background-color:pink;}
-
-
-
-
 <title>XYZ COLLEGE</title>
 </style>
+
 </head>
-<body>
+<body >
 <center>
 <h1> <mark> XYZ COLLEGE </mark> </h1>
 <br><br><br><br><br><br><br><br>
@@ -46,8 +61,18 @@ margin:4px 2px;
 <center>
 
 <a href="login.html"<button class="button button1">SIGN IN</button></a>
+<a href="contact.html"<button class="button2 button1">CONTACT</button></a>
+
+{% load static %}
+<img src="{% static 'mainpage.png' %}" alt="My image">
+
+
+<!-- img src="/static/mainpage.png" -->
+
 
 </center>
+
 </center>
+
 </body>
 </html>
