@@ -255,6 +255,10 @@ def contact(request):
             
     return render(request,'contact.html')
 
+def campus(request):
+            
+    return render(request,'campus.html')
+
     
     
     

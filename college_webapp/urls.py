@@ -30,7 +30,8 @@ urlpatterns = [
     path('home/fees.html',views.fee),
     path('home/attendance.html',views.attendance),
     path('home/tutor.html',views.tutor),
-     path('home/contact.html',views.contact)
+    path('home/contact.html',views.contact),
+    path('home/campus.html',views.campus)
     
     #path('home/student_login.html',views.student_log),
     #path('home/student_login_top.html',views.student_login_top),  
