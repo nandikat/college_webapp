@@ -26,7 +26,7 @@ SECRET_KEY = 's7gw2fo&l#b$ver55l#vb&30)igulfsx9&(#0bv(qyki_+szog'
 DEBUG = True
 #True
 
-ALLOWED_HOSTS = ['192.168.29.36', '192.168.29.35', '192.168.29.37', '127.0.0.1','localhost']
+ALLOWED_HOSTS = ['xyzapp.centralindia.cloudapp.azure.com','192.168.29.36', '192.168.29.35', '192.168.29.37', '127.0.0.1','localhost']
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 SESSION_COOKIE_AGE = 600  # 10 min
@@ -87,9 +87,9 @@ DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
        'NAME': 'xyz_college',
-        'USER':'root',
-        'PASSWORD':'admin',
-        'HOST':'localhost',
+        'USER':'nddbadmin',
+        'PASSWORD':'ntdbadmin21#',
+        'HOST':'ntdb.mysql.database.azure.com',
         'PORT':'3306'
    },
 }
