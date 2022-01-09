@@ -18,6 +18,11 @@ display:inline-block;
 font-size:16px;
 margin:4px 2px;
 }
+
+h4{
+font-size: 25px
+
+}
 .button1{background-color:pink;}
 
 </style>
@@ -26,13 +31,14 @@ margin:4px 2px;
 <body>
 <center>
 <br><br><br><br><br><br><br>
- <marquee width="60%" direction="right" height="100px"><h4><mark1>XYZ COLLEGE <mark1></h4></marquee>
-
+<h4>
+ <marquee width="60%"  direction="right" height="100px"><h4><mark1>XYZ COLLEGE <mark1></h4></marquee>
+</h4>
 <form action="#" method="post">
 {% csrf_token %}
 <mark1><label>USERNAME:  </label></mark1>
 <input type="text" id="fname" name="fname" required>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br>
 <mark1><label>PASSWORD:  </label></mark1>
 <input type="password" id="pwd1" name="pwd1" required>
 
@@ -47,7 +53,7 @@ margin:4px 2px;
 
 </center>
 <br><br><br><br><br>
- <marquee width="60%" direction="left" height="100px"><h4><mark1>XYZ COLLEGE<mark1></h4></marquee>
+ <marquee width="60%" direction="left" height="100px"><mark1>XYZ COLLEGE<mark1></marquee>
 
 
 

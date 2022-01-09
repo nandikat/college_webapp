@@ -87,9 +87,12 @@ DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
        'NAME': 'xyz_college',
-        'USER':'nddbadmin',
-        'PASSWORD':'ntdbadmin21#',
-        'HOST':'ntdb.mysql.database.azure.com',
+##        'USER':'nddbadmin',
+##        'PASSWORD':'ntdbadmin21#',
+##        'HOST':'ntdb.mysql.database.azure.com',
+        'USER':'root',
+        'PASSWORD':'admin',
+        'HOST':'localhost',
         'PORT':'3306'
    },
 }

@@ -61,27 +61,7 @@ position:absolute;
 left:300px;
 top:50px;
 
-}
 
-.button4
-{
-border :none;
-color:white;
-padding:0px 0px;
-text-align:center;
-display:inline-block;
-font-size:16px;
-margin:4px 2px;
-position:absolute;
-right:0px;
-top:550px;
-
-
-}
-
-.frame1
-{
-width: 300px; height: 300px; max-height: 350px; position:absolute;right:0px;top:200px;
 }
 
 
@@ -90,7 +70,7 @@ width: 300px; height: 300px; max-height: 350px; position:absolute;right:0px;top:
 </style>
 
 </head>
-<body onload="myLoad()">
+<body >
 <center>
 <h1> <mark> XYZ COLLEGE </mark> </h1>
 <br><br>
@@ -102,27 +82,9 @@ width: 300px; height: 300px; max-height: 350px; position:absolute;right:0px;top:
 <a href="campus.html"<button class="button3 button1">CAMPUS</button></a>
 
 {% load static %}
-<img src="{% static 'mainpage.png' %}" alt="My image" width="600" height="470">
-<br><br>
-<script>
-function myLoad() 
-{
-	window.document.getElementById("bot").hidden = true;
-}
-function myFunction() 
-{
-	if (window.document.getElementById("bot").hidden == true ){
-		window.document.getElementById("bot").hidden = false;
-	}
-	else{ 	myLoad(); }
-}
-</script>
-  
-<iframe src="https://webchat.botframework.com/embed/genbotqna-bot?s=45GNH3sHiwI.xzMoxCcMgkLcLgcAsA6Rmqazy63a9foCGGR59qr4Ltw" id="bot" class="frame1"></iframe>
-
-<button class="button button4" onclick="myFunction()">
-   <img src="{% static 'bot.gif' %}" alt="open chat-bot"  width="80" height="100" >
-</button>
+<img src="{% static 'mainpage.png' %}" alt="My image" width="600" height="500">
+<br><br><br><br>
+<iframe src="https://webchat.botframework.com/embed/genbotqna-bot?s=45GNH3sHiwI.xzMoxCcMgkLcLgcAsA6Rmqazy63a9foCGGR59qr4Ltw" style="height: 250px; max-height: 250px;"></iframe>
 
 
 </center>
