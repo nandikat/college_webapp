@@ -1,0 +1,8 @@
+[Unit]
+Description=launch XYZ App
+
+[Service]
+ExecStart=/bin/bash /home/ntvm/env.sh
+
+[Install]
+WantedBy=multi-user.target
