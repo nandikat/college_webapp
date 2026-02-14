@@ -1,68 +1,62 @@
-NOTE:FOR BETTER READABILITY,THE SAME CONTENT IS ALSO AVAILABLE IN PDF FORMAT
-
 1.	PROJECT TITLE:      
-Student Portal for College/Institute
+ Student Portal for College/Institute
 2.	PROBLEM STATEMENT/OPPORTUNITY:  
-XYZ College provide various vocational and industry specific skill courses at diploma and undergraduate level. As of now all their student services, starting from course enquiry, admission process, class schedules, Fee status etc. are handled manually over the enquiry counter. During the normal course Only one enquiry counter suffices the purpose however during the peak times (session start month) college administration has to arrange for 2-3 such counters to handle all such services. College management is also planning to expand its operations/services and open two more campuses in the neighboring states. Objective of this project is to provide a self-service portal automating some of these processes and lay a foundation to cover the rest gradually. 
+ XYZ College provide various vocational and industry specific skill courses at diploma and undergraduate level. As of now all their student services, starting from course enquiry, admission process, class   schedules, Fee status etc. are handled manually over the enquiry counter. During the normal course Only one enquiry counter suffices the purpose however during the peak times (session start month) college administration has to arrange for 2-3 such counters to handle all such services. College management is also planning to expand its operations/services and open two more campuses in the neighboring states.  Objective of this project is to provide a self-service portal automating some of these processes and lay a foundation to cover the rest gradually. 
 3.	PROJECT DESCRIPTION: 
-The solution will involve building a Web portal which will provide information to two sets of users.
-1.	Students who are already registered and pursuing their courses at the institute.
-2.	The visitors like prospective students/media/education counsellors etc. 
-
-The registered users(students) will have access to services such as class schedules, exams schedule, fees dues, attendance records, transcripts etc. 
-
-The unregistered users will only have access to the general website, which has the frequently asked questions, course details, admission process, news, general publications, webinars and other information about the college.
-
-The users of the web app will have the option to subscribe to the college’s newsletter.
-
-For a social cause, portal will provide features through which students can publish their volunteer services as a tutor and the other external/internal students can put a request to avail such services without any charge.
-To build a scalable solution and in future take advantage of new digital capabilities like AI etc., we will design and implement this solution on Cloud making use of its cost effective and robust services.
+ The solution will involve building a Web portal which will provide information to two sets of users.
+ 1.	Students who are already registered and pursuing their courses at the institute.
+ 2.	The visitors like prospective students/media/education counsellors etc. 
+ The registered users(students) will have access to services such as class schedules, exams schedule, fees dues, attendance records, transcripts etc. 
+ The unregistered users will only have access to the general website, which has the frequently asked questions, course details, admission process, news, general publications, webinars and other information about  the college.
+ The users of the web app will have the option to subscribe to the college’s newsletter.
+ For a social cause, portal will provide features through which students can publish their volunteer services as a tutor and the other external/internal students can put a request to avail such services without   any charge.
+ To build a scalable solution and in future take advantage of new digital capabilities like AI etc., we will design and implement this solution on Cloud making use of its cost effective and robust services.
 4.	Features 
-The Web App has the following features:
-	BOT: Web app has a bot which is designed to help visitors on the website by answering FAQs.
-	The Web App has a student portal on which the registered students will be able to query information like results, fee dues, class schedules, attendance records etc.  from college information systems.
+ The Web App has the following features:
+   1.BOT: Web app has a bot which is designed to help visitors on the website by answering FAQs.
+   2.The Web App has a student portal on which the registered students will be able to query information like results, fee dues, class schedules, attendance records etc.  from college information systems.
 5.	Dependencies
-The following infrastructure and software components are used for this project:
-1)	Azure 
-I.	VM (to host Web App workload) with following components: -
-a.	Linux (ubuntu 20.04)
-b.	mysql-client-core-8.0
-c.	Python version:3.8
-i.	Virtual environment
-ii.	Django
-iii.	mysql-client
-iv.	mysql-connector-python
-d.	git
-II.	Azure Database for MySQL flexible server
-a.	MySQL version 5.7
-III.	Web app BOT
-a.	  QnA maker
-i.	Knowledge base
-•	Create FAQs
-•	Import FAQs
-b.	Knowledge base
-IV.	Function App (to automate start/stop of VM and Database at pre-defined time slots)
-a.	Operating system-Windows
-b.	PowerShell
-i.	Az module version 7.*
-V.	Persistent Storage for VM 
-VI.	Microsoft.Compute/images
-2)	Repository: GitHub 
+ The following infrastructure and software components are used for this project:
+ 1)	Azure 
+ I.	VM (to host Web App workload) with following components: -
+ a.	Linux (ubuntu 20.04)
+ b.	mysql-client-core-8.0
+ c.	Python version:3.8
+ i.	Virtual environment
+ ii.	Django
+ iii.	mysql-client
+ iv.	mysql-connector-python
+ d.	git
+ II.	Azure Database for MySQL flexible server
+ a.	MySQL version 5.7
+ III.	Web app BOT
+ a.	  QnA maker
+ i.	Knowledge base
+ •	Create FAQs
+ •	Import FAQs
+ b.	Knowledge base
+ IV.	Function App (to automate start/stop of VM and Database at pre-defined time slots)
+ a.	Operating system-Windows
+ b.	PowerShell
+ i.	Az module version 7.*
+ V.	Persistent Storage for VM 
+ VI.	Microsoft.Compute/images
+ 2)	Repository: GitHub 
 6.	Setup / Installation Steps
-1)	Login to Azure portal with developer access
-2)	Set up Database
-I.	Azure Database for MySQL flexible server with following parameters: -
-i.	Name: ntdb (this name is used in making connection from app to database)
-ii.	private IP address
-iii.	MySQL version: 5.7
-iv.	Compute size: Standard_B1s
-v.	Storage:20 GiB
-vi.	Virtual network: prj1-vnet/ntsubnet
-II.	Set up db model and sample data
-i.	Connect to database using MySQL client 
-ii.	Create database xyz_college.
-iii.	Load database and sample data using following command:
-1.	mysql -u username -p new_database < dbdump.txt
+ 1)	Login to Azure portal with developer access
+ 2)	Set up Database
+ I.	Azure Database for MySQL flexible server with following parameters: -
+ i.	Name: ntdb (this name is used in making connection from app to database)
+ ii.	private IP address
+ iii.	MySQL version: 5.7
+ iv.	Compute size: Standard_B1s
+ v.	Storage:20 GiB
+ vi.	Virtual network: prj1-vnet/ntsubnet
+ II.	Set up db model and sample data
+ i.	Connect to database using MySQL client 
+ ii.	Create database xyz_college.
+ iii.	Load database and sample data using following command:
+ 1.	mysql -u username -p new_database < dbdump.txt
 
 
 3)	Set up VM and Project files:
