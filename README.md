@@ -21,26 +21,7 @@ To build a scalable solution and in future take advantage of new digital capabil
 The Web App has the following features:
 	BOT: Web app has a bot which is designed to help visitors on the website by answering FAQs.
 	The Web App has a student portal on which the registered students will be able to query information like results, fee dues, class schedules, attendance records etc.  from college information systems.
-5.	How to test (see demo)
-1)	Click on the below URL to access this web application.
-
-http://xyzapp.centralindia.cloudapp.azure.com:8080/home
-This will show XYZ college home page.
-
- NOTE: TO SAVE COST THE PROJECT DEMO MACHINE WILL BE RUNNING ONLY BETWEEN 10AM-6PM IST MON-FRI.
-
-2)	TO access Student portal 
-
-
-In order to access the Student Portal you may use following Test user credentials :
-
-USER  NAME	PASSWORD
-Raj	1_r
-Betty	2_b
-
-3)	After successful authentication you will be directed to the Student Portal.
-In case you face an issue in accessing the App please write to: tanejanandika@gmail.com for support.
-6.	Dependencies
+5.	Dependencies
 The following infrastructure and software components are used for this project:
 1)	Azure 
 I.	VM (to host Web App workload) with following components: -
@@ -67,7 +48,7 @@ i.	Az module version 7.*
 V.	Persistent Storage for VM 
 VI.	Microsoft.Compute/images
 2)	Repository: GitHub 
-7.	Setup / Installation Steps
+6.	Setup / Installation Steps
 1)	Login to Azure portal with developer access
 2)	Set up Database
 I.	Azure Database for MySQL flexible server with following parameters: -
